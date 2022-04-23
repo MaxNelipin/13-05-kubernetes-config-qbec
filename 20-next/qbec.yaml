@@ -1,0 +1,15 @@
+apiVersion: qbec.io/v1alpha1
+kind: App
+metadata:
+  name: 13-05-qbec
+spec:
+  environments:
+    stage:
+      defaultNamespace: stage
+      server: https://192.168.0.125:8443
+      excludes:
+        - twogisgeo
+    prod:
+      defaultNamespace: prod
+      server: https://192.168.0.125:8443
+  vars: {}
